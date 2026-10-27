@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="dogs.css" type="text/css">
+		<title>My Dogs</title>
+	</head>
+	<body>
+		<header>
+			<h3>
+				<a href="index.html">About Me</a>
+				|
+				<a href="dogs.html">My Dogs</a>
+				|
+				<a href="games.html">My Favorite Games</a>
+			</h3>
+		</header>
+		<body>
+			<h1>My Dogs!</h1>
+			<button id="rotate">
+				<img src="images/dogs.jpg" alt="Picture of Yoda and Marley" width="450" id="dogs">
+			</button>
+			<p>Here is a picture of Yoda and Marley, Yoda is the white pug and Marley is the black one.</p>
+		</body>
+		<footer></footer>
+		<script>
+			//Create event for image clicked
+			document.querySelector("#rotate").addEventListener('click', function() {
+				//begin rotation
+				document.querySelector("#dogs").classList.add('rotating')
+			});
+        </script>
+	</body>
+</html>
